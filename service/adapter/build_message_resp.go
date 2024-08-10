@@ -7,7 +7,7 @@ import (
 
 func BuildMessageRespByMsgAndUser(msgList *[]model.Message, userMap map[int64]*model.User) []resp.MessageResp {
 	var messageRespList []resp.MessageResp
-	for i := range len(*msgList) {
+	for i := range *msgList {
 		messageResp := resp.MessageResp{}
 		msg := (*msgList)[i]
 		msgUser := resp.MsgUser{}

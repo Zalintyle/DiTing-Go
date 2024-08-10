@@ -1,10 +1,11 @@
 package redisCache
 
 import (
+	"fmt"
+
 	"DiTing-Go/dal/model"
 	"DiTing-Go/domain/enum"
 	"DiTing-Go/pkg/utils"
-	"fmt"
 )
 
 // RemoveRoomCache 移除房间缓存

@@ -1,10 +1,12 @@
 package middleware
 
 import (
+	"time"
+
 	"DiTing-Go/global"
+
 	"github.com/gin-gonic/gin"
 	"github.com/sirupsen/logrus"
-	"time"
 )
 
 // LoggerToFile 日志记录到文件

@@ -1,18 +1,20 @@
 package service
 
 import (
-	global2 "DiTing-Go/global"
-	"DiTing-Go/pkg/utils"
-	"DiTing-Go/websocket/global"
 	"fmt"
-	"github.com/gorilla/websocket"
-	"github.com/pkg/errors"
 	"log"
 	"net/http"
 	"strconv"
 	"strings"
 	"sync"
 	"time"
+
+	global2 "DiTing-Go/global"
+	"DiTing-Go/pkg/utils"
+	"DiTing-Go/websocket/global"
+
+	"github.com/gorilla/websocket"
+	"github.com/pkg/errors"
 )
 
 // TODO:连接断开处理

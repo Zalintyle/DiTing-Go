@@ -1,6 +1,10 @@
 package listener
 
 import (
+	"context"
+	"fmt"
+	"sort"
+
 	"DiTing-Go/dal/model"
 	"DiTing-Go/domain/dto"
 	"DiTing-Go/domain/enum"
@@ -9,14 +13,12 @@ import (
 	"DiTing-Go/pkg/utils"
 	"DiTing-Go/utils/jsonUtils"
 	"DiTing-Go/utils/redisCache"
-	"context"
-	"fmt"
+
 	"github.com/apache/rocketmq-client-go/v2"
 	"github.com/apache/rocketmq-client-go/v2/consumer"
 	"github.com/apache/rocketmq-client-go/v2/primitive"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
-	"sort"
 )
 
 func init() {

@@ -1,10 +1,12 @@
 package listener
 
 import (
-	"DiTing-Go/domain/enum"
-	"DiTing-Go/global"
 	"context"
 	"fmt"
+
+	"DiTing-Go/domain/enum"
+	"DiTing-Go/global"
+
 	"github.com/apache/rocketmq-client-go/v2"
 	"github.com/apache/rocketmq-client-go/v2/consumer"
 	"github.com/apache/rocketmq-client-go/v2/primitive"

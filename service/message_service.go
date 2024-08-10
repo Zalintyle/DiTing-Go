@@ -1,6 +1,10 @@
 package service
 
 import (
+	"context"
+	"log"
+	"time"
+
 	"DiTing-Go/dal/model"
 	"DiTing-Go/domain/enum"
 	"DiTing-Go/domain/vo/req"
@@ -8,11 +12,9 @@ import (
 	"DiTing-Go/global"
 	pkgEnum "DiTing-Go/pkg/domain/enum"
 	"DiTing-Go/pkg/domain/vo/resp"
-	"context"
+
 	"github.com/apache/rocketmq-client-go/v2/primitive"
 	"github.com/goccy/go-json"
-	"log"
-	"time"
 )
 
 // SendTextMsgService 发送文本消息

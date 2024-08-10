@@ -1,11 +1,13 @@
 package utils
 
 import (
+	"time"
+
 	"DiTing-Go/global"
+
 	"github.com/dgrijalva/jwt-go"
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
-	"time"
 )
 
 var jwtSecret = []byte(viper.GetString("jwt.secret"))

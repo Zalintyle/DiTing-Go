@@ -3,6 +3,7 @@ package utils
 import (
 	domainEnum "DiTing-Go/domain/enum"
 	"DiTing-Go/global"
+
 	"github.com/go-redis/redis"
 	"github.com/goccy/go-json"
 	"github.com/jinzhu/copier"

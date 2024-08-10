@@ -1,6 +1,12 @@
 package listener
 
 import (
+	"context"
+	"fmt"
+	"sort"
+	"strconv"
+	"time"
+
 	"DiTing-Go/dal/model"
 	"DiTing-Go/domain/enum"
 	"DiTing-Go/global"
@@ -8,8 +14,7 @@ import (
 	"DiTing-Go/pkg/utils"
 	"DiTing-Go/service"
 	"DiTing-Go/utils/redisCache"
-	"context"
-	"fmt"
+
 	"github.com/apache/rocketmq-client-go/v2"
 	"github.com/apache/rocketmq-client-go/v2/consumer"
 	"github.com/apache/rocketmq-client-go/v2/primitive"
@@ -17,9 +22,6 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/viper"
 	"gorm.io/gorm"
-	"sort"
-	"strconv"
-	"time"
 )
 
 func init() {

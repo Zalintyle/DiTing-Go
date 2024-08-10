@@ -1,9 +1,11 @@
 package global
 
 import (
+	"fmt"
+
 	"DiTing-Go/dal"
 	"DiTing-Go/dal/query"
-	"fmt"
+
 	"github.com/spf13/viper"
 )
 

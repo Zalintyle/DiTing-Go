@@ -1,6 +1,12 @@
 package service
 
 import (
+	"context"
+	"fmt"
+	"strconv"
+	"strings"
+	"time"
+
 	"DiTing-Go/dal/model"
 	"DiTing-Go/domain/dto"
 	"DiTing-Go/domain/enum"
@@ -9,14 +15,10 @@ import (
 	pkgEnum "DiTing-Go/pkg/domain/enum"
 	"DiTing-Go/pkg/domain/vo/resp"
 	pkgResp "DiTing-Go/pkg/domain/vo/resp"
-	"context"
-	"fmt"
+
 	"github.com/gin-gonic/gin"
 	"github.com/pkg/errors"
 	"gorm.io/gorm"
-	"strconv"
-	"strings"
-	"time"
 )
 
 func CreateGroupService(uid int64, uidList []int64) (pkgResp.ResponseData, error) {

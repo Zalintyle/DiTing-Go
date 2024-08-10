@@ -3,15 +3,19 @@ package main
 // gorm gen configure
 
 import (
-	_ "DiTing-Go/pkg/setting"
 	"fmt"
+
+	_ "DiTing-Go/pkg/setting"
+
 	"github.com/spf13/viper"
 	"gorm.io/driver/mysql"
 	"gorm.io/gen"
 	"gorm.io/gorm"
 )
 
-var MySQLDSN = fmt.Sprintf("%s:%s@tcp(%s:%s)/diting?charset=utf8mb4&parseTime=True", viper.GetString("mysql.username"), viper.GetString("mysql.password"), viper.GetString("mysql.host"), viper.GetString("mysql.port"))
+var MySQLDSN = fmt.Sprintf("%s:%s@tcp(%s:%s)/diting?charset=utf8mb4&parseTime=True",
+	viper.GetString("mysql.username"), viper.GetString("mysql.password"),
+	viper.GetString("mysql.host"), viper.GetString("mysql.port"))
 
 func connectDB(dsn string) *gorm.DB {
 	db, err := gorm.Open(mysql.Open(dsn))

@@ -1,9 +1,10 @@
 package global
 
 import (
+	"sync"
+
 	"github.com/gorilla/websocket"
 	cmap "github.com/orcaman/concurrent-map/v2"
-	"sync"
 )
 
 type Channels struct {

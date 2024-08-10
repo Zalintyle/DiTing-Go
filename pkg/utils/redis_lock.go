@@ -1,12 +1,14 @@
 package utils
 
 import (
-	"DiTing-Go/global"
 	"context"
 	"fmt"
+	"time"
+
+	"DiTing-Go/global"
+
 	"github.com/go-redsync/redsync/v4"
 	"github.com/pkg/errors"
-	"time"
 )
 
 type RedSyncLock struct {

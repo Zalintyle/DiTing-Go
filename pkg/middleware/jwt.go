@@ -1,10 +1,12 @@
 package middleware
 
 import (
+	"strings"
+
 	"DiTing-Go/pkg/domain/vo/resp"
 	"DiTing-Go/pkg/utils"
+
 	"github.com/gin-gonic/gin"
-	"strings"
 )
 
 // JWT jwt中间件

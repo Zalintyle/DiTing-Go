@@ -1,6 +1,11 @@
 package service
 
 import (
+	"context"
+	"strconv"
+	"sync"
+	"time"
+
 	"DiTing-Go/dal"
 	"DiTing-Go/dal/model"
 	"DiTing-Go/domain/enum"
@@ -13,13 +18,10 @@ import (
 	pkgResp "DiTing-Go/pkg/domain/vo/resp"
 	"DiTing-Go/pkg/utils"
 	"DiTing-Go/service/adapter"
-	"context"
+
 	"github.com/gin-gonic/gin"
 	cmap "github.com/orcaman/concurrent-map/v2"
 	"github.com/pkg/errors"
-	"strconv"
-	"sync"
-	"time"
 )
 
 func GetContactListService(uid int64, pageReq pkgReq.PageReq) (pkgResp.ResponseData, error) {

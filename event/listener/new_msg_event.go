@@ -1,22 +1,24 @@
 package listener
 
 import (
+	"context"
+	"encoding/json"
+	"fmt"
+	"time"
+
 	"DiTing-Go/dal/model"
-	query "DiTing-Go/dal/query"
+	"DiTing-Go/dal/query"
 	"DiTing-Go/domain/enum"
 	"DiTing-Go/global"
 	"DiTing-Go/pkg/utils"
 	wsEnum "DiTing-Go/websocket/domain/enum"
 	resp2 "DiTing-Go/websocket/domain/vo/resp"
 	"DiTing-Go/websocket/service"
-	"context"
-	"encoding/json"
-	"fmt"
+
 	"github.com/apache/rocketmq-client-go/v2"
 	"github.com/apache/rocketmq-client-go/v2/consumer"
 	"github.com/apache/rocketmq-client-go/v2/primitive"
 	"github.com/spf13/viper"
-	"time"
 )
 
 func init() {

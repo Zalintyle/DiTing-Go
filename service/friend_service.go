@@ -1,6 +1,12 @@
 package service
 
 import (
+	"context"
+	"fmt"
+	"sort"
+	"strconv"
+	"time"
+
 	"DiTing-Go/dal"
 	"DiTing-Go/dal/model"
 	"DiTing-Go/domain/dto"
@@ -14,14 +20,10 @@ import (
 	"DiTing-Go/pkg/utils"
 	"DiTing-Go/utils/jsonUtils"
 	"DiTing-Go/utils/redisCache"
-	"context"
-	"fmt"
+
 	"github.com/pkg/errors"
 	"gorm.io/gen"
 	"gorm.io/gorm"
-	"sort"
-	"strconv"
-	"time"
 )
 
 // ApplyFriendService 添加好友

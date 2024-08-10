@@ -1,6 +1,6 @@
 module DiTing-Go
 
-go 1.22.1
+go 1.19
 
 require (
 	github.com/apache/rocketmq-client-go/v2 v2.1.2
@@ -71,7 +71,6 @@ require (
 	github.com/modern-go/reflect2 v1.0.2 // indirect
 	github.com/patrickmn/go-cache v2.1.0+incompatible // indirect
 	github.com/pelletier/go-toml/v2 v2.2.0 // indirect
-	github.com/redis/go-redis/v9 v9.5.1 // indirect
 	github.com/rs/xid v1.5.0 // indirect
 	github.com/sagikazarmark/locafero v0.4.0 // indirect
 	github.com/sagikazarmark/slog-shim v0.1.0 // indirect

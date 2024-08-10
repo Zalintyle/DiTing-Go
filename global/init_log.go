@@ -2,11 +2,12 @@ package global
 
 import (
 	"fmt"
-	"github.com/sirupsen/logrus"
-	"github.com/spf13/viper"
 	"io"
 	"os"
 	"path"
+
+	"github.com/sirupsen/logrus"
+	"github.com/spf13/viper"
 )
 
 var Logger *logrus.Logger

@@ -1,6 +1,9 @@
 package routes
 
 import (
+	"log"
+	"net/http"
+
 	"DiTing-Go/controller"
 	_ "DiTing-Go/docs"
 	"DiTing-Go/pkg/domain/vo/resp"
@@ -8,11 +11,10 @@ import (
 	"DiTing-Go/service"
 	"DiTing-Go/websocket/global"
 	websocketService "DiTing-Go/websocket/service"
+
 	"github.com/gin-gonic/gin"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
-	"log"
-	"net/http"
 )
 
 // InitRouter 初始化路由
